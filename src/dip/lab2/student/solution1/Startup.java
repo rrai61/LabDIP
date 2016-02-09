@@ -9,12 +9,6 @@ package dip.lab2.student.solution1;
  *
  * @author ritu
  */
-public abstract class TipCalculator {
-    private ServiceQuality serviceQuality;
+public class Startup {
     
-    public enum ServiceQuality {
-        GOOD, FAIR, POOR
-    }
-    
-    public abstract double calculateTip(String serviceQuality);
 }
