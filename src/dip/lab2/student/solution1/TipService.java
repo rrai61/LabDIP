@@ -15,6 +15,7 @@ public class TipService{
     
     public TipService(TipCalculator calc) {
         this.calc = calc;
+        calc.setRates(.10, .15, .20);
     }
     
     public double calculateTip(ServiceQuality serviceQuality) {
