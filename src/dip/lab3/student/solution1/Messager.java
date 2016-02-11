@@ -19,8 +19,8 @@ public class Messager {
         this.writer = writer;
     }
     
-    public void inputMessage(String message) {
-        reader.inputMessage(message);
+    public void inputMessage() {
+        reader.inputMessage();
     }
     
     public void outputMessage() {

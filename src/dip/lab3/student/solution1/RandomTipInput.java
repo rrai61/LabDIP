@@ -12,12 +12,20 @@ import java.util.Scanner;
  *
  * @author ritu
  */
-public class RandomTipInput {
-    ArrayList<String> messages;
-    Scanner scan = new Scanner(System.in);
+public class RandomTipInput implements Reader {
+    private ArrayList<String> messages;
     
-    public void inputMessage(String message) {
+    @Override
+    public void inputMessage() {
         System.out.println("Please enter a random tip for the day: ");
-        messages.add(scan.nextLine());
+        
+        Scanner scan = new Scanner(System.in);
+        String tip = scan.nextLine();
+        messages.add(tip);
+    }
+    
+    @Override
+    public ArrayList<String> getMessages() {
+        return messages;
     }
 }

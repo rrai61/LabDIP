@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package dip.lab3.student.solution1;
-
+import java.util.Scanner;
 
 /**
  *
@@ -12,6 +12,12 @@ package dip.lab3.student.solution1;
  */
 public class Startup {
     public static void main (String args[]) {
-
+        
+        Reader tipInput = new RandomTipInput();
+        Writer console = new ConsoleOutput();
+        
+        Messager messgr = new Messager(tipInput, console);
+        
+        messgr.inputMessage();
     }
 }

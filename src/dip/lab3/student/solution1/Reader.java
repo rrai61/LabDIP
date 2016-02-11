@@ -4,12 +4,15 @@
  * and open the template in the editor.
  */
 package dip.lab3.student.solution1;
+
+import java.util.ArrayList;
+
 /**
  *
  * @author ritu
  */
 public interface Reader {
     
-    public abstract void inputMessage(String message);
-    
+    public abstract void inputMessage();
+    public abstract ArrayList<String> getMessages();
 }

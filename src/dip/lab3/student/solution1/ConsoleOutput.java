@@ -15,7 +15,9 @@ public class ConsoleOutput implements Writer{
     
     @Override
     public void outputMessage(ArrayList<String> messages){
-        System.out.println();
+        for (String msg: messages){
+            System.out.println(msg);
+        }
     }
     
 }

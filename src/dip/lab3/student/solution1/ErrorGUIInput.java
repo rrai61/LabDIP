@@ -7,17 +7,24 @@ package dip.lab3.student.solution1;
 
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+
 /**
  *
  * @author ritu
  */
-public class GUIOutput implements Writer{
+public class ErrorGUIInput implements Reader{
+
+    private ArrayList<String> messages;
     
     @Override
-    public void outputMessage(ArrayList<String> messages){
-        for(String msg: messages){
-            JOptionPane.showMessageDialog(null,msg);
-        }
+    public void inputMessage(){       
+        
+        String response = JOptionPane.showInputDialog(null, "Enter message here:");
+        messages.add(response);
     }
     
+    @Override
+    public ArrayList<String> getMessages(){
+        return messages;
+    }
 }
