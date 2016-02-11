@@ -5,13 +5,17 @@
  */
 package dip.lab3.student.solution1;
 
+import java.util.ArrayList;
 
 /**
  *
  * @author ritu
  */
-public class Startup {
-    public static void main (String args[]) {
-
+public class ConsoleOutput implements Writer{
+    
+    @Override
+    public void outputMessage(ArrayList<String> messages){
+        System.out.println();
     }
+    
 }

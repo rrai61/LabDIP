@@ -5,13 +5,14 @@
  */
 package dip.lab3.student.solution1;
 
+import java.util.ArrayList;
 
 /**
  *
  * @author ritu
  */
-public class Startup {
-    public static void main (String args[]) {
-
-    }
+public class RandomTipInput {
+    ArrayList<String> messages;
+    
+    
 }

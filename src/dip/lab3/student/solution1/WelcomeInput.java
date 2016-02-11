@@ -5,13 +5,10 @@
  */
 package dip.lab3.student.solution1;
 
-
 /**
  *
  * @author ritu
  */
-public class Startup {
-    public static void main (String args[]) {
-
-    }
+public class WelcomeInput {
+    
 }

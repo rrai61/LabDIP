@@ -4,14 +4,12 @@
  * and open the template in the editor.
  */
 package dip.lab3.student.solution1;
-
-
 /**
  *
  * @author ritu
  */
-public class Startup {
-    public static void main (String args[]) {
-
-    }
+public interface Reader {
+    
+    public abstract void inputMessage(String message);
+    
 }
