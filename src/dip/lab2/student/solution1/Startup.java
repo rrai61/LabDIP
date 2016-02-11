@@ -12,12 +12,12 @@ package dip.lab2.student.solution1;
 public class Startup { 
     public static void main(String[] args) {
         
-        TipService service = new TipService(10.00, 15.00, 20.00);
-        TipCalculator calculators[] = {new FoodServiceTipCalculator(), new BaggageServiceTipCalculator()};
+        TipCalculator food = new FoodServiceTipCalculator(100.00);
         
-        for (TipCalculator calc: calculators){
-            service.calculateTip(calc, ServiceQuality.FAIR);
-        }
+        TipService service = new TipService(food);
+        
+        service.setRates(.10, .15, .20);
+        System.out.println(service.calculateTip(ServiceQuality.FAIR));
         
         
     }
