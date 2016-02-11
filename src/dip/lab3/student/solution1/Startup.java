@@ -19,5 +19,6 @@ public class Startup {
         Messager messgr = new Messager(tipInput, console);
         
         messgr.inputMessage();
+        messgr.outputMessage();
     }
 }
