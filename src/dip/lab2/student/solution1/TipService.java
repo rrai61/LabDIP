@@ -11,22 +11,18 @@ package dip.lab2.student.solution1;
  */
 public class TipService{
     
-    private double GOOD_RATE;
-    private double FAIR_RATE;
-    private double POOR_RATE;
+    private TipCalculator calc;
     
     public TipService() {
         
     }
     
-    public TipService(double GOOD_RATE, double FAIR_RATE, double POOR_RATE) {
-        setGOOD_RATE(GOOD_RATE);
-        setFAIR_RATE(FAIR_RATE);
-        setPOOR_RATE(POOR_RATE);
+    public TipService(TipCalculator calc) {
+        this.calc = calc;
     }
     
-    public void calculateTip(TipCalculator calc, ServiceQuality serviceQuality) {
-        calc.calculateTip(serviceQuality, rate);
+    public void calculateTip(ServiceQuality serviceQuality) {
+        calc.calculateTip(serviceQuality);
     }
     
     public double getGOOD_RATE() {
