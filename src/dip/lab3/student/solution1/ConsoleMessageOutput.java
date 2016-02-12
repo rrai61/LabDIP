@@ -14,7 +14,8 @@ import java.util.ArrayList;
 public class ConsoleMessageOutput implements MessageWriter{
     
     @Override
-    public void outputMessage(ArrayList<String> messages){
+    public void outputMessage(MessageReader inputReader){
+        ArrayList<String> messages = inputReader.getMessages();
         for (String msg: messages){
             System.out.println(msg);
         }

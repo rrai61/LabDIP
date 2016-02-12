@@ -13,6 +13,6 @@ import java.util.ArrayList;
  */
 public interface MessageWriter {
     
-    public abstract void outputMessage(ArrayList<String> messages);
+    public abstract void outputMessage(MessageReader inputReader);
     
 }

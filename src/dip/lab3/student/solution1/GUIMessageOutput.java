@@ -11,13 +11,17 @@ import javax.swing.JOptionPane;
  *
  * @author ritu
  */
-public class GUIOutput implements MessageWriter{
+public class GUIMessageOutput implements MessageWriter{
+    private String msgs;
     
     @Override
-    public void outputMessage(ArrayList<String> messages){
+    public void outputMessage(MessageReader inputReader){
+        ArrayList<String> messages = inputReader.getMessages();
         for(String msg: messages){
-            JOptionPane.showMessageDialog(null,msg);
+            msgs += msg + " ";
         }
+        JOptionPane.showMessageDialog(null,msgs);
+        System.exit(0);
     }
     
 }

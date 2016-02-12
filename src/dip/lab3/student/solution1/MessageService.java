@@ -24,6 +24,6 @@ public class MessageService {
     }
     
     public void outputMessage() {
-        writer.outputMessage(reader.getMessages());
+        writer.outputMessage(reader);
     }
 }
