@@ -9,12 +9,12 @@ package dip.lab3.student.solution1;
  *
  * @author ritu
  */
-public class Messager {
+public class MessageService {
     
-    private Reader reader;
-    private Writer writer;
+    private MessageReader reader;
+    private MessageWriter writer;
     
-    public Messager(Reader reader, Writer writer) {
+    public MessageService(MessageReader reader, MessageWriter writer) {
         this.reader = reader;
         this.writer = writer;
     }

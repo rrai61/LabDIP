@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author ritu
  */
-public class RandomTipInput implements Reader {
+public class RandomTipMessageInput implements MessageReader {
     private ArrayList<String> messages;
     
     @Override

@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author ritu
  */
-public class ErrorGUIInput implements Reader{
+public class ErrorMessageInput implements MessageReader{
 
     private ArrayList<String> messages;
     

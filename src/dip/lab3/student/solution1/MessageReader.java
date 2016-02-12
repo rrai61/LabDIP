@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author ritu
  */
-public interface Reader {
+public interface MessageReader {
     
     public abstract void inputMessage();
     public abstract ArrayList<String> getMessages();

@@ -11,13 +11,8 @@ import java.util.ArrayList;
  *
  * @author ritu
  */
-public class ConsoleOutput implements Writer{
+public interface MessageWriter {
     
-    @Override
-    public void outputMessage(ArrayList<String> messages){
-        for (String msg: messages){
-            System.out.println(msg);
-        }
-    }
+    public abstract void outputMessage(ArrayList<String> messages);
     
 }

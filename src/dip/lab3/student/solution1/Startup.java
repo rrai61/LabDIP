@@ -13,10 +13,10 @@ import java.util.Scanner;
 public class Startup {
     public static void main (String args[]) {
         
-        Reader tipInput = new RandomTipInput();
-        Writer console = new ConsoleOutput();
+        MessageReader tipInput = new RandomTipMessageInput();
+        MessageWriter console = new ConsoleMessageOutput();
         
-        Messager messgr = new Messager(tipInput, console);
+        MessageService messgr = new MessageService(tipInput, console);
         
         messgr.inputMessage();
         messgr.outputMessage();
