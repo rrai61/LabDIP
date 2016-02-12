@@ -10,16 +10,14 @@ package dip.lab1.student.solution1;
  * @author ritu
  */
 public class Startup {
-    Employee emp1 = new HourlyEmployee();
-    Employee emp2 = new SalariedEmployee();
-    Employee emp3 = new SalariedEmployee();
-    
-    HRService hr = new HRService();
-    
-    Employee[] listofemployees = {emp1, emp2, emp3};
-    
-    for(Employee e: listofemployees){
-        hr.getAnnualCompensationForEmployee(e);
+    public static void main (String[] args){
+        
+        HRService hr = new HRService();
+
+        Employee[] listofemployees = {new HourlyEmployee(12.00, 130), new SalariedEmployee(20000, 500)};
+
+        for(Employee e: listofemployees){
+            System.out.println(hr.getAnnualCompensationForEmployee(e));
+        }
     }
-    
 }

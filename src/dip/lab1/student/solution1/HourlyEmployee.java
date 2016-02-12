@@ -12,7 +12,11 @@ package dip.lab1.student.solution1;
 public class HourlyEmployee implements Employee{
     private double hourlyRate;
     private double totalHrsForYear;
-
+    
+    public HourlyEmployee(double hourlyRate, double totalHrsForYear) {
+        setHourlyRate(hourlyRate);
+        setTotalHrsForYear(totalHrsForYear);
+    }
     public double getHourlyRate() {
         return hourlyRate;
     }

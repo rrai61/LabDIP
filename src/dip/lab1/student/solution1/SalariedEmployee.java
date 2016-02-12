@@ -12,6 +12,11 @@ package dip.lab1.student.solution1;
 public class SalariedEmployee implements Employee{
     private double annualSalary;
     private double annualBonus;
+    
+    public SalariedEmployee(double annualSalary, double annualBonus) {
+        setAnnualSalary(annualSalary);
+        setAnnualBonus(annualBonus);
+    }
 
     public double getAnnualSalary() {
         return annualSalary;
